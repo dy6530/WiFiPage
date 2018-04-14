@@ -1,0 +1,103 @@
+html,body,ul,h1,h2,h3,p,input,img,figure{margin:0;padding:0;}
+body{height:100%;font:16px \5FAE\8F6F\96C5\9ED1;font-family: "微软雅黑"; display:-webkit-box;display:box;-webkit-box-orient:vertical;box-orient:vertical;color:#000;background:#fff;overflow: hidden;}
+footer,header,nav,section{display:block}
+ul,ol{list-style:none;padding:0;}
+img{border:0;}
+button,input,select,textarea{font-size:14px;outline:none;}
+em,i,b{font-style:normal;}
+a{text-decoration:none;}
+.pr{position: relative;}
+.pa{position: absolute;}
+
+.section {width: 100%;position: relative;overflow-x: hidden;}
+.section-cotent,.header{max-width:1180px;min-width:1180px;_width:1180px;margin:0 auto;position:relative;padding-top:22px}
+.section2{background:url(../images/topBg.png) top center no-repeat;height:1080px;overflow: hidden;}
+.section2 img{position:absolute;opacity:0}.section2 span,.btnGroup{position:absolute;}
+.section2 .txt3-1{top:210px;right:0;animation-duration: 1s;animation-delay: 1.4s;}
+.section2 .txt3-2{top:340px;left:477px;letter-spacing: 12px;animation-duration: 1s;animation-delay: 1.4s;}
+.section2 .txt3-3{top:439px;right:105px;animation-duration: 1.5s;animation-delay: 2.4s;z-index: 1;}
+.section2 .btnGroup{top:422px;right:330px;animation-duration: 1.5s;animation-delay: 2.2s;z-index: 1;}
+
+.section2 .news{top:175px;left:0;z-index: 1;}
+.section2 .video{top:297.5px;left:272px;}
+.section2 .section3-img{top:533px;left:40px;z-index: 1;}
+.section2 .person{top:483px;left:464px;}
+.section2 .ball3-1{top:448px;left:242px;}
+.section2 .ball3-2{top:434px;left:232px;}
+.section2 .ball3-3{top:336px;left:622px;}
+.section2 .ball3-4{top:364px;left:0;}
+.bottom1{width: 1920px;height: 558px;top: 523px;background: url(../images/bottomBg1.png) no-repeat;z-index: 0;}
+.bottom2{width: 1360px;height: 302px;top: 780px;background: url(../images/bottomBg2.png) no-repeat;z-index: 2;}
+
+.select.s1_an{-webkit-animation-duration: .8s;animation-duration: .8s;animation-delay: .5s;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-name: fadeInUp;animation-name: fadeInUp;}
+.s3_an{position: absolute;}
+.select.s3_an{-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-name: fadeInUp;animation-name: fadeInUp;}
+
+.blank_text{position: relative; width:550px; margin:20px auto; line-height: 1; font-size: 50px; overflow: hidden;}
+.blank_text:after{width: 300%; height: 100%; content: ""; position: absolute; top: 0; left: 0; background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(15,20,40, 0.1)), color-stop(0.4, rgba(15,20,40, 0.1)), color-stop(0.5, rgba(15,20,40, 0)), color-stop(0.6, rgba(15,20,40, 0.1)), color-stop(1, rgba(15,20,40, 0.1))); -webkit-animation: slide ease-in-out 2s infinite;}
+@-webkit-keyframes slide{0%{-webkit-transform:translateX(-66.666%);} 100%{-webkit-transform:translateX(0);}}
+
+.shine{width: 720px;text-indent: 85px;}
+@-webkit-keyframes shine{0%{background-position: top left;} 100%{background-position: top right;}}
+.shine{animation-delay: 3.9s;font-size: 40px; background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat; -webkit-background-size: 100px; color: rgba(255, 255, 255, 0.1); -webkit-background-clip: text;display:block;position:absolute;-webkit-animation-name: shine; -webkit-animation-duration: 2.5s; -webkit-animation-iteration-count: infinite;}
+
+@keyframes opacity0{from{opacity:0}to{opacity:1}}
+@-webkit-keyframes opacity0{from{opacity:0}to{opacity:1}}
+@-ms-keyframes opacity0{from{opacity:0}to{opacity:1}}
+@keyframes shifting-56{from{transform:translate(0,56px)}to{transform:translate(0,0)}}
+@-webkit-keyframes shifting-56{from{-webkit-transform:translate(0,56px)}to{-webkit-transform:translate(0,0)}}
+@-ms-keyframes shifting-56{from{-ms-transform:translate(0,56px)}to{-ms-transform:translate(0,0)}}
+.animate-opa600-move56{-webkit-animation:opacity0 1s 1s 1 forwards,shifting-56 1s 1s 1 forwards;-o-animation:opacity0 1s 1s 1 forwards,shifting-56 1s 1s 1 forwards;animation:opacity0 1s 1s 1 forwards,shifting-56 1s 1s 1 forwards}
+
+.button-container{margin-top:20px;width:300px;height:80px;border-radius:40px;background-color:#665ce6;position:relative;overflow:hidden;display: block;}
+.button-container:hover .btn-mask{background-position:0 70%}
+.btn-download{text-align:center;line-height:80px;font-size:30px;color:#fff;}
+button{font-family:"微软雅黑";background:#665ce6; color:#fff; border:none; position:relative; height:80px;width: 300px;text-align: center; cursor:pointer; transition:800ms ease all; outline:none;}
+button:hover{background:#eae9ff; color:#665ce6;}
+button:hover i{color:#665ce6;}
+button:before,button:after{content:''; position:absolute; top:0; right:0; height:2px; width:0; background: #665ce6; transition:400ms ease all;}
+button:after{right:inherit; top:inherit; left:0; bottom:0;}
+button:hover:before,button:hover:after{width:100%; transition:800ms ease all;}
+i{vertical-align: baseline;margin-right: 12px;}
+
+/*animate.css*/
+.animated{-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: both;animation-fill-mode: both}
+.animated.infinite{-webkit-animation-iteration-count: infinite;animation-iteration-count: infinite}
+.animated.hinge{-webkit-animation-duration: 2s;animation-duration: 2s}
+@-webkit-keyframes bounceInDown{0%,100%,60%,75%,90%{-webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);transition-timing-function: cubic-bezier(0.215, .61, .355, 1)}0%{opacity: 0;-webkit-transform: translate3d(0, -3000px, 0);transform: translate3d(0, -3000px, 0)}60%{opacity: 1;-webkit-transform: translate3d(0, 25px, 0);transform: translate3d(0, 25px, 0)}75%{-webkit-transform: translate3d(0, -10px, 0);transform: translate3d(0, -10px, 0)}90%{-webkit-transform: translate3d(0, 5px, 0);transform: translate3d(0, 5px, 0)}100%{-webkit-transform: none;transform: none}}
+@keyframes bounceInDown{0%,100%,60%,75%,90%{-webkit-transition-timing-function: cubic-bezier(0.215, .61, .355, 1);transition-timing-function: cubic-bezier(0.215, .61, .355, 1)}0%{opacity: 0;-webkit-transform: translate3d(0, -3000px, 0);-ms-transform: translate3d(0, -3000px, 0);transform: translate3d(0, -3000px, 0)}60%{opacity: 1;-webkit-transform: translate3d(0, 25px, 0);-ms-transform: translate3d(0, 25px, 0);transform: translate3d(0, 25px, 0)}75%{-webkit-transform: translate3d(0, -10px, 0);-ms-transform: translate3d(0, -10px, 0);transform: translate3d(0, -10px, 0)}90%{-webkit-transform: translate3d(0, 5px, 0);-ms-transform: translate3d(0, 5px, 0);transform: translate3d(0, 5px, 0)}100%{-webkit-transform: none;-ms-transform: none;transform: none}}
+.bounceInDown{-webkit-animation-name: bounceInDown;animation-name: bounceInDown}
+@-webkit-keyframes fadeInUp{0%{opacity: 0;-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0)}100%{opacity: 1;-webkit-transform: none;transform: none}}
+@keyframes fadeInUp{0%{opacity: 0;-webkit-transform: translate3d(0, 100%, 0);-ms-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0)}100%{opacity: 1;-webkit-transform: none;-ms-transform: none;transform: none}}
+.fadeInUp{-webkit-animation-name: fadeInUp;animation-name: fadeInUp}
+@-webkit-keyframes zoomInRight{0%{opacity: 0;-webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);-webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);animation-timing-function: cubic-bezier(0.55, .055, .675, .19)}60%{opacity: 1;-webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);-webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);animation-timing-function: cubic-bezier(0.175, .885, .32, 1)}}
+@keyframes zoomInRight{0%{opacity: 0;-webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);-ms-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);-webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);animation-timing-function: cubic-bezier(0.55, .055, .675, .19)}60%{opacity: 1;-webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);-ms-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);-webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);animation-timing-function: cubic-bezier(0.175, .885, .32, 1)}}
+.zoomInRight{-webkit-animation-name: zoomInRight;animation-name: zoomInRight}
+
+/*font.css*/
+@font-face{font-family: 'FontAwesome'; src: url('../fonts/fontawesome-webfont.eot?v=4.7.0'); src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg'); font-weight: normal; font-style: normal;}
+.fa{display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+.fa-lg{font-size: 1.33333333em; line-height: 0.75em; vertical-align: -15%;}
+.fa-apple:before{content: "\f179";}
+.fa-android:before{content: "\f17b";}
+
+
+.section2 .section2-img{top:540px;left:183px;z-index: 2;}
+.screen4-cicle{position:absolute;top:469px;left:116px;z-index:1;width:960px;height:960px;animation-delay: 1.5s;}
+.screen4-cicle .cicle{border-radius: 18%;position:absolute;left:50%;top:50%;width:160px;height:160px;margin:-480px 0 0 -480px;border: 15px solid #e5f0ff;-webkit-animation:wave 5s infinite linear both;animation:wave 5s infinite linear both;}
+.screen4-cicle .cicle-2{-webkit-animation-delay:1.25s;animation-delay:1.25}
+.screen4-cicle .cicle-3{-webkit-animation-delay:2.5s;animation-delay:2.5s}
+.screen4-cicle .cicle-4{-webkit-animation-delay:3.75s;animation-delay:3.75s}
+@-webkit-keyframes wave{0%{transform:scale(0);opacity:1}
+25%{opacity:.75}
+50%{opacity:.5}
+75%{opacity:.25}
+100%{transform:scale(1);opacity:0}}
+@keyframes wave{0%{transform:scale(0);opacity:1}
+25%{opacity:.75}
+50%{opacity:.5}
+75%{opacity:.25}
+100%{transform:scale(1);opacity:0}}
+@-webkit-keyframes fadeIn{0%{opacity: 0}100%{opacity: 1}}
+@keyframes fadeIn{0%{opacity: 0}100%{opacity: 1}}
+.fadeIn{-webkit-animation-name: fadeIn;animation-name: fadeIn}

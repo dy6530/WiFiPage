@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var userAgentInfo = navigator.userAgent.toLowerCase();
+			var Agents = new Array("android", "iphone", "symbianos", "windows phone", "ipad", "ipod");
+			var isPC = true;
+			for (var v = 0; v < Agents.length; v++) {
+				if (userAgentInfo.indexOf(Agents[v]) > 0) { isPC = false; break; }
+			}
+			if(isPC){
+				window.location.href="PC/index.html";
+			}else{
+				window.location.href="mobile/index.htm";
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
